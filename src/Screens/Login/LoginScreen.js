@@ -1,5 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import {View, StyleSheet, Text, TouchableOpacity, Alert} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  Alert,
+  ScrollView,
+} from 'react-native';
 import CustomTextInput from '../../components/CustomTextInput';
 
 const LoginScreen = ({navigation: {navigate}}) => {
