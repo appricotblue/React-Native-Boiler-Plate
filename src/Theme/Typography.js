@@ -1,6 +1,6 @@
 import {Platform, StyleSheet} from 'react-native';
 import Colors from './Colors';
-import {getHeight, getWidth} from './Constants';
+import {getHeight, getWidth} from './Const';
 
 const Typography = StyleSheet.create({
   appTitle: {
