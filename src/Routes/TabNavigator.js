@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../Screens/Home/Home';
 import Colors from '../Theme/Colors';
-
 import HomeFSVG from '../assets/svg/HomeFSVG';
-
 import HomeTSVG from '../assets/svg/HomeTSVG';
+import ReelsTSVG from '../assets/svg/ReelsTSVG';
+import ReelsFSVG from '../assets/svg/ReelsFSVG';
+import Reels from '../Screens/Reels/ReelScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,8 +18,6 @@ function TabNavigator() {
         screenOptions={{
           headerTitleAlign: 'center',
           tabBarActiveTintColor: Colors.primary,
-          // tabBarInactiveTintColor: Colors.WHITE,
-          // headerTitleStyle: { ...Typography.largeTextBold },
           tabBarActiveBackgroundColor: Colors.white,
           tabBarInactiveBackgroundColor: Colors.white,
           tabBarLabel: '',
@@ -40,7 +39,7 @@ function TabNavigator() {
             tabBarHideOnKeyboard: true,
           }}
         />
-        {/* <Tab.Screen
+        <Tab.Screen
           name="Reels"
           component={Reels}
           options={{
@@ -57,41 +56,6 @@ function TabNavigator() {
             tabBarHideOnKeyboard: true,
           }}
         />
-
-        <Tab.Screen
-          name="Contests"
-          component={Contests}
-          options={{
-            title: 'Contests',
-            headerShown: false,
-            tabBarIcon: ({color, focused}) => {
-              if (focused) {
-                return <ContestTSVG height={40} width={40} color={color} />;
-              }
-              return <ContestFSVG height={40} width={40} color={color} />;
-            },
-            unmountOnBlur: true,
-            tabBarHideOnKeyboard: true,
-          }}
-        />
-        <Tab.Screen
-          name="Notifications"
-          component={Notifications}
-          options={{
-            title: 'Notifications',
-            headerShown: false,
-            tabBarIcon: ({color, focused}) => {
-              if (focused) {
-                return (
-                  <NotificationTSVG height={40} width={40} color={color} />
-                );
-              }
-              return <NotificationFSVG height={40} width={40} color={color} />;
-            },
-            unmountOnBlur: true,
-            tabBarHideOnKeyboard: true,
-          }}
-        /> */}
       </Tab.Navigator>
     </>
   );
