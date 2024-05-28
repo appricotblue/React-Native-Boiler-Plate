@@ -10,6 +10,7 @@ const Home = ({navigation: {navigate}}) => {
     <SafeAreaView style={styles.container}>
       <TouchableOpacity onPress={() => OnHomePress()}>
         <Text style={styles.text}>Home Screen</Text>
+        {/*  */}
       </TouchableOpacity>
     </SafeAreaView>
   );
